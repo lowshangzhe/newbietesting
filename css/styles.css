@@ -1,0 +1,148 @@
+/**  Body **/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Chilanka', cursive;
+}
+
+/** Heading **/
+.title a {
+  text-decoration: none;
+  color: yellow;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 60px;
+}
+
+header {
+  background-image: url(../images/road.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transfrom: translate(-50%,-50%);
+}
+
+.title a:hover {
+  color: #fff  ;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/** Journey **/
+.mid_body {
+  background-color: #87CEFA;
+}
+
+#journey {
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  color: #283D4B;
+}
+
+/** Sections **/
+.small_heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.left_01, .left_03 {
+  display: flex;
+  background-color: #dbf0fd;
+}
+
+.left_01 > div, .left_02 > div, .left_03 > div  {
+  padding: 30px;
+}
+
+.left_01 img, .left_02 img, .left_03 img {
+  width: 300px;
+}
+
+.left_02 {
+  display: flex;
+  background-color: #87CEFA;
+}
+
+.left {
+  min-width: 300px;
+  height: auto;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  width: 70%;
+  margin: auto;
+}
+
+
+/** Footer **/
+li {
+  list-style: none;
+  margin: 20px 30px;
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 10px;
+  color: #000;
+  transition: .5s;
+}
+
+.footer {
+  padding-bottom: 40px;
+  text-align: center;
+  margin-top: 30px;
+  background-image: url(../images/cloudone.png);
+  background-size: cover;
+}
+
+.footerlinks ul li {
+  margin: 10px;
+  foot-size: 16px;
+  foot-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.footerlinks ul li a:hover {
+  font-size: 50px;
+  color: blue;
+}
+
+/** Responsive **/
+@media only screen and (max-width: 600px){
+
+/** Sections **/
+.left_01, .left_02, .left_03{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.left {
+  text-align: center;
+}
+
+.right{
+
+}
+
+}
